@@ -1,19 +1,6 @@
 @charset "utf-8";
 /*------------------------------------------------------------------
-.______    __  ___   ___  __   _______  ___________    ____ 
-|   _  \  |  | \  \ /  / |  | |   ____||   ____\   \  /   / 
-|  |_)  | |  |  \  V  /  |  | |  |__   |  |__   \   \/   /  
-|   ___/  |  |   >   <   |  | |   __|  |   __|   \_    _/   
-|  |      |  |  /  .  \  |  | |  |____ |  |        |  |     
-| _|      |__| /__/ \__\ |__| |_______||__|        |__|     
 
-
-[Main Stylesheet]
-
-Project:    Marshall
-Version:    0.1
-Last change:    01.04.2017
-Primary use:    Ultimate Coming Soon Template
 
 
 [Typography]
@@ -271,12 +258,12 @@ textarea {
 -------------------------------------------------------------------*/
 .clearfix::after,
 .clearfix::before,
-.marshall-container::before,
-.marshall-container::after,
+.ke-container::before,
+.ke-container::after,
 [class^="marshall-col-"]::before,
 [class^="marshall-col-"]::after,
-.marshall-content-column::after,
-.marshall-content-column::before,
+.ke-content-column::after,
+.ke-content-column::before,
 .marshall-social-column::before,
 .marshall-social-column::after,
 .marshall-the_content::after,
@@ -287,8 +274,8 @@ textarea {
 .stay_connent_with_social::after,
 .divided_or::before,
 .divided_or::after,
-.marshall-newsletter-content::before,
-.marshall-newsletter-content::after,
+.ke-newsletter-content::before,
+.ke-newsletter-content::after,
 .marshall-static-content::before,
 .marshall-static-content::after,
 .simply-countdown-column::before,
@@ -297,7 +284,7 @@ textarea {
   display: block;
   clear: both;
 }
-.marshall-container,
+.ke-container,
 .marshall-social-column {
   width: 100%;
 }
@@ -470,7 +457,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 /* -----------------------------------------------------------------
   3. fixed close button
 -------------------------------------------------------------------*/
-.marshall-content-close {
+.ke-content-close {
   background-color: #333;
   border: 0 none;
   height: 40px;
@@ -486,18 +473,18 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0.4s;
   cursor: pointer;
 }
-.marshall-content-close:hover {
+.ke-content-close:hover {
   font-size: 1.1em;
   line-height: 45px;
 }
-.marshall-content-close i.fa {
+.ke-content-close i.fa {
   left: 50%;
   line-height: 20px;
   position: absolute;
   top: calc(50% - 3px);
   transform: translateY(-50%) translateX(-50%);
 }
-.marshall-content-close.fixed_color_changed {
+.ke-content-close.fixed_color_changed {
   background-color: #FFF;
   color: #333;
 }
@@ -506,7 +493,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 /* -----------------------------------------------------------------
   3. Loader
 -------------------------------------------------------------------*/
-.marshall-loading-screen {
+.ke-loading-screen {
   background-color: #333;
   bottom: 0;
   left: 0;
@@ -516,17 +503,17 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   top: 0;
   z-index: 99999;
 }
-.marshall-loading-icon {
+.ke-loading-icon {
   display: table;
   height: 100%;
   position: absolute;
   width: 100%;
 }
-.marshall-loading-inner {
+.ke-loading-inner {
   display: table-cell;
   vertical-align: middle;
 }
-.marshall-load {
+.ke-load {
   background-color: #f61067;
   border-radius: 50%;
   height: 60px;
@@ -534,7 +521,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   position: relative;
   width: 60px;
 }
-.marshall-load::before {
+.ke-load::before {
   background-color: transparent;
   border: 2px dashed #fff;
   border-radius: 50%;
@@ -556,7 +543,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   animation: 4s linear 0s normal none infinite running spinnerRotate;
   -webkit-animation: 4s linear 0s normal none infinite running spinnerRotate;
 }
-.marshall-load::after {
+.ke-load::after {
   content: attr(data-name);
   font-size: 1.8em;
   font-weight: 700;
@@ -569,7 +556,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 /* -----------------------------------------------------------------
   4. Content Column
 -------------------------------------------------------------------*/
-.marshall-content-column {
+.ke-content-column {
   height: 100vh;
   margin-left: 15%;
   position: relative;
@@ -582,12 +569,12 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 /* -----------------------------------------------------------------
   5. Logo
 -------------------------------------------------------------------*/
-.marshall-logo {
+.ke-logo {
   margin-left: 15%;
   margin-top: 35px;
   position: absolute;
 }
-.marshall-logo img {
+.ke-logo img {
   display: inline-block;
   max-width: 75px;
 }
@@ -597,7 +584,7 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 /* -----------------------------------------------------------------
   6. Content
 -------------------------------------------------------------------*/
-.marshall-content {
+.ke-content {
   display: block;
   margin-left: 15%;
   position: absolute;
@@ -605,16 +592,16 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   visibility: visible;
   width: 70%;
 }
-.marshall-button-group {
+.ke-button-group {
   margin-top: 40px;
   position: relative;
   z-index: 1;
 }
-.marshall-button-group .marshall-btn,
-.marshall-button-group .marshall-btn-text {
+.ke-button-group .marshall-btn,
+.ke-button-group .marshall-btn-text {
   margin: 0;
 }
-.marshall-content.css-center {
+.ke-content.css-center {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -1097,22 +1084,22 @@ ul.marshall-social-links li {
 /* -----------------------------------------------------------------
   12. Newsletter form
 -------------------------------------------------------------------*/
-.marshall-newsletter-header {
+.ke-newsletter-header {
   padding: 40px 0 20px;
   position: relative;
 }
-.marshall-newsletter-header img {
+.ke-newsletter-header img {
   display: block;
   margin: auto;
   position: relative;
   width: 100px;
   z-index: 3;
 }
-.marshall-newsletter-inner {
+.ke-newsletter-inner {
   padding: 0 30px;
   text-align: center;
 }
-.marshall-newsletter-description > p {
+.ke-newsletter-description > p {
   color: #747474;
 }
 .fa-times-thin:before {
@@ -1137,11 +1124,11 @@ span.close-newsletter:hover {
 span.close-newsletter i{
   line-height: 18px;
 }
-.marshall-newsletter-content > input {
+.ke-newsletter-content > input {
   display: block;
   width: 100%;
 }
-.marshall-newsletter-content input[type="email"] {
+.ke-newsletter-content input[type="email"] {
   background-color: #ebebeb;
   border: 0 solid;
   line-height: 1.5;
@@ -1149,7 +1136,7 @@ span.close-newsletter i{
   padding: 13px 15px 15px;
   text-align: center;
 }
-.marshall-newsletter-content {
+.ke-newsletter-content {
   margin: 35px auto auto;
   width: 80%;
 }
@@ -1157,7 +1144,7 @@ span.close-newsletter i{
   height: 464px;
   margin-top: -232px;
 }
-.marshall-newsletter-description h2 {
+.ke-newsletter-description h2 {
   margin-top: 10px;
 }
 .animation-icon {
@@ -1176,7 +1163,7 @@ span.close-newsletter i{
 .large-icon {
   font-size: 2em;
 }
-.marshall-newsletter-animation-icons {
+.ke-newsletter-animation-icons {
   height: 50px;
   left: 50%;
   margin-left: -25px;
@@ -1185,7 +1172,7 @@ span.close-newsletter i{
   top: 50%;
   width: 50px;
 }
-.marshall-newsletter-content label {
+.ke-newsletter-content label {
   display: block;
   font-size: 0.8em;
   margin-top: 5px;
@@ -1282,7 +1269,7 @@ span.close-newsletter i{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
-.marshall-newsletter-content .marshall_submit {
+.ke-newsletter-content .ke_submit {
   background-color: #f61067;
   border: 0 none;
   display: block;
@@ -1295,10 +1282,10 @@ span.close-newsletter i{
   position: relative;
   margin: auto;
 }
-.marshall-newsletter-content .marshall_submit:hover {
+.ke-newsletter-content .ke_submit:hover {
   background-color: #E00A62;
 }
-.marshall-newsletter-content .marshall_submit::after {
+.ke-newsletter-content .ke_submit::after {
   background-image: url("images/tick.png");
   background-size: 100% auto;
   content: "";
@@ -1317,14 +1304,14 @@ span.close-newsletter i{
   -webkit-transition: transform 0.4s;
   transition: transform 0.4s;
 }
-.marshall-newsletter-content.mform-submitting .marshall_submit {
+.ke-newsletter-content.mform-submitting .ke_submit {
   border-radius: 50% !important;
   height: 46px;
   margin: auto;
   text-indent: -9999px;
   width: 46px !important;
 }
-.marshall-newsletter-content .marshall_submit::before {
+.ke-newsletter-content .ke_submit::before {
   opacity: 0;
   visibility: hidden;
   background-color: transparent;
@@ -1345,7 +1332,7 @@ span.close-newsletter i{
   transition-timing-function: linear;
   transition-delay: 0;
 }
-.marshall-newsletter-content.mform-animate .marshall_submit::before {
+.ke-newsletter-content.mform-animate .ke_submit::before {
   opacity: 1;
   visibility: visible;
   transition: top 0.4s,left 0.4s,right 0.4s,bottom 0.4s, border-width 0.4s ease 0.4s;
@@ -1353,19 +1340,19 @@ span.close-newsletter i{
   animation: 1s linear 0.4s normal none infinite running spinnerRotate;
   -webkit-animation: 1s linear 0.4s normal none infinite running spinnerRotate;
 }
-.marshall-newsletter-content.mform-submitting.mform-success .marshall_submit::after {
+.ke-newsletter-content.mform-submitting.mform-success .ke_submit::after {
   transform: scale(1);
   opacity: 1;
   visibility: visible;
 }
-.marshall-newsletter-content.mform-animate.mform-submitting.mform-success .marshall_submit::before {
+.ke-newsletter-content.mform-animate.mform-submitting.mform-success .ke_submit::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-width: 0;
 }
-.marshall-newsletter-header.mfrom-header-animate-close .marshall-newsletter-animation-icons .animation-icon{
+.ke-newsletter-header.mfrom-header-animate-close .ke-newsletter-animation-icons .animation-icon{
   left: 0;
   transform: rotate(0deg);
   top: 0;
@@ -1402,7 +1389,7 @@ span.close-newsletter i{
 .mformBounceInDown {
   animation-name: mformBounceInDown;
 }
-.marshall-newsletter-header.mfrom-header-animate-close img {
+.ke-newsletter-header.mfrom-header-animate-close img {
   animation-name: mformBounceInDown;
   animation-duration: 0.6s;
   animation-timing-function: linear;
@@ -1557,7 +1544,7 @@ canvas.fireworks {
 .align-center {
   text-align: center;
 }
-.align-center .marshall-logo {
+.align-center .ke-logo {
   margin-left: 50%;
   position: absolute;
   -webkit-transform: translateX(-50%);
@@ -1596,7 +1583,7 @@ canvas.fireworks {
 /* -----------------------------------------------------------------
   *. v3
 -------------------------------------------------------------------*/
-.mrs-v3 .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-v3 .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   float: none;
 }
 .anounchment_element {
@@ -1634,10 +1621,10 @@ canvas.fireworks {
   transform: rotate(-1deg);
   width: 100%;
 }
-.mrs-v3 .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content label {
+.mrs-v3 .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content label {
   bottom: -35px;
 }
-.mrs-v3.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-v3.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   overflow: inherit;
 }
 
@@ -1692,13 +1679,13 @@ canvas.fireworks {
 /* -----------------------------------------------------------------
   *. V5
 -------------------------------------------------------------------*/
-.marshall-screen-left .marshall-logo {
+.marshall-screen-left .ke-logo {
   margin-left: 40px;
   margin-top: 20px;
   width: 90px;
   z-index: 3;
 }
-.marshall-screen-left .marshall-logo img {
+.marshall-screen-left .ke-logo img {
   max-width: 100%;
   width: 100%;
 }
@@ -1824,20 +1811,20 @@ canvas.fireworks {
 .default_mrs_newsletter {
   text-align: center;
 }
-.default_mrs_newsletter .marshall-newsletter-content input {
+.default_mrs_newsletter .ke-newsletter-content input {
   border-radius: 40px;
   margin: auto auto 20px;
   -webkit-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
   width: 90%;
 }
-.default_mrs_newsletter .marshall-newsletter-content .marshall_submit {
+.default_mrs_newsletter .ke-newsletter-content .ke_submit {
   background-color: #1c52ce;
   border-radius: 30px;
   margin-top: 20px;
   width: 40%;
 }
-.default_mrs_newsletter .marshall-newsletter-content {
+.default_mrs_newsletter .ke-newsletter-content {
   margin-top: 30px;
   width: 90%;
 }
@@ -1845,7 +1832,7 @@ canvas.fireworks {
   min-height: 620px;
   overflow: auto;
 }
-.default_mrs_newsletter .marshall-newsletter-content input:focus {
+.default_mrs_newsletter .ke-newsletter-content input:focus {
   background-color: #fff;
   border: 0 none;
   border-radius: 0;
@@ -1854,7 +1841,7 @@ canvas.fireworks {
 .marshall-screen-left .position_footer {
   color: #FFF;
 }
-.marshall-col-7 .marshall-content {
+.marshall-col-7 .ke-content {
   width: 73%;
 }
 .marshall-video-trailer {
@@ -1961,7 +1948,7 @@ canvas.fireworks {
   margin-left: 25%;
   text-align: center;
 }
-.marshall-middle-6 .marshall-logo {
+.marshall-middle-6 .ke-logo {
   left:50%;
   margin-left: 0;
   position: absolute;
@@ -2022,7 +2009,7 @@ body.mrs-v9 .morph-button-modal-2 .morph-content {
   background-color: #232428;
   color: #fff;
 }
-body.mrs-v9 .marshall-newsletter-description > p {
+body.mrs-v9 .ke-newsletter-description > p {
   color: #fff;
 }
 body.mrs-v9 .marshall-social-links a {
@@ -2070,7 +2057,7 @@ body.mrs-v9 .marshall-fit-column {
 body.mrs-v11 .fat_title {
     font-family: 'Work Sans', sans-serif;
 }
-body.mrs-v11 .marshall-content {
+body.mrs-v11 .ke-content {
   display: block;
   margin-left: 0;
   position: absolute;
@@ -2201,7 +2188,7 @@ body.mrs-v14 .morph-button-modal-2 .morph-content {
 body.mrs-v14 .marshall-fit-column {
   background-image: none;
 }
-body.mrs-v14 .marshall-logo img {
+body.mrs-v14 .ke-logo img {
   border-radius: 50%;
   overflow: hidden;
 }
@@ -2227,7 +2214,7 @@ body.mrs-v15 .morph-button-modal-2 .morph-content {
 body.mrs-v15 .marshall-fit-column {
   background-image: none;
 }
-body.mrs-v15 .marshall-logo img {
+body.mrs-v15 .ke-logo img {
   border-radius: 50%;
   overflow: hidden;
 }
@@ -2251,7 +2238,7 @@ body.mrs-v15 .marshall-middle-6 .stay_connent_with_social {
   position: absolute;
 }
 
-.default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   background-color: #fff;
   border-radius: 40px;
   margin-top: 30px;
@@ -2259,27 +2246,27 @@ body.mrs-v15 .marshall-middle-6 .stay_connent_with_social {
   float: left;
   position: relative;
 }
-.default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content input {
+.default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content input {
   float: left;
   margin: auto auto 0;
   width: calc(80% - 30px);
   background-color: transparent;
 }
-body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content input:active,
-body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content input:hover,
-body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content input:focus {
+body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content input:active,
+body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content input:hover,
+body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content input:focus {
   box-shadow: none;
   border: 0px solid;
   outline: none
 }
-.default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content .marshall_submit {
+.default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content .ke_submit {
   float: right;
   margin-right: 5px;
   margin-top: 4px;
   padding: 10px 0;
   width: 80px;
 }
-.default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content label {
+.default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content label {
   bottom: -50px;
   display: block;
   font-size: 0.8em;
@@ -2298,13 +2285,13 @@ body.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newslette
 body.mrs-v16 {
   background-color: #f1f2ed;
 }
-body.mrs-v16 .marshall-container {
+body.mrs-v16 .ke-container {
   background-color: #fb3669;
   background-image: url("images/bg.png");
   background-repeat: repeat;
   background-size: auto;
 }
-.marshall-content-close.default_close_active {
+.ke-content-close.default_close_active {
   display: block;
 }
 .info_box {
@@ -2335,15 +2322,15 @@ body.mrs-v16 .marshall-container {
   background-color: #FFF;
   color: #232428;
 }
-.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   border: 1px solid #efe9e9;
 }
 body.mrs-white .marshall-social-links a {
   color: #000;
 }
-body.mrs-white .default_mrs_newsletter .marshall-newsletter-content input:focus,
-body.mrs-white .default_mrs_newsletter .marshall-newsletter-content input:active,
-body.mrs-white .default_mrs_newsletter .marshall-newsletter-content input:hover {
+body.mrs-white .default_mrs_newsletter .ke-newsletter-content input:focus,
+body.mrs-white .default_mrs_newsletter .ke-newsletter-content input:active,
+body.mrs-white .default_mrs_newsletter .ke-newsletter-content input:hover {
   background-color: #fff;
   border: 0 none;
   border-radius: 0;
@@ -2515,14 +2502,14 @@ body.mrs-white .default_mrs_newsletter .marshall-newsletter-content input:hover 
   color: #b6b6b6;
   text-align: left;
 }
-.mrs-v19 .marshall-content h4 {
+.mrs-v19 .ke-content h4 {
   color: #9a9ca8;
   font-size: 1.3em;
 }
-.mrs-v19 .marshall-content h3 {
+.mrs-v19 .ke-content h3 {
   line-height: 1.3;
 }
-.mrs-v19 .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-v19 .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   background-color: rgba(231, 231, 233, 0.7);
   border-radius: 40px;
   float: left;
@@ -2530,7 +2517,7 @@ body.mrs-white .default_mrs_newsletter .marshall-newsletter-content input:hover 
   position: relative;
   width: 80%;
 }
-.mrs-v19 .default_mrs_newsletter .marshall-newsletter-content input:focus {
+.mrs-v19 .default_mrs_newsletter .ke-newsletter-content input:focus {
   background-color: transparent;
   box-shadow: 0 0 0;
   border-radius: 0: 
@@ -2727,7 +2714,7 @@ body.mrs-v20 .marshall-middle-6 .fat_title {
 .mrs-v21 h1 strong{
   font-family: "Work Sans",sans-serif;
 }
-body.mrs-v21 .marshall-content {
+body.mrs-v21 .ke-content {
   display: block;
   left: 50%;
   margin-left: 0;
@@ -2782,10 +2769,10 @@ body.mrs-v23 {
   background: rgba(0, 0, 0, 0) url("images/v23/confetti.svg") repeat scroll center center;
   color: #969696;
 }
-body.mrs-v23 .marshall-content h2{
+body.mrs-v23 .ke-content h2{
   color: #424242;
 }
-body.mrs-v23 .marshall-content h2 {
+body.mrs-v23 .ke-content h2 {
   color: #424242;
   font-size: 1.6em;
   font-weight: bold;
@@ -2800,7 +2787,7 @@ body.mrs-v23 .marshall-content h2 {
 .marhall-maintain-thumb img{
   display: block;
 }
-body.mrs-v24 .marshall-content h4 {
+body.mrs-v24 .ke-content h4 {
   font-size: 1.4em;
   line-height: 1.5;
 }
@@ -2826,10 +2813,10 @@ body.mrs-v24 {
   left: 0;
   background: rgba(0, 0, 0, 0) url("images/v24/confetti.svg") repeat scroll center center;
 }
-body.mrs-v24 .marshall-content h2{
+body.mrs-v24 .ke-content h2{
   color: #424242;
 }
-body.mrs-v24 .marshall-content h2 {
+body.mrs-v24 .ke-content h2 {
   color: #424242;
   font-size: 1.6em;
   font-weight: bold;
@@ -2844,7 +2831,7 @@ body.mrs-v24 .marshall-content h2 {
 .marhall-maintain-thumb img{
   display: block;
 }
-body.mrs-v24 .marshall-content h4 {
+body.mrs-v24 .ke-content h4 {
   font-size: 1.4em;
   line-height: 1.5;
 }
@@ -2856,10 +2843,10 @@ body.mrs-v24 .marshall-col-content {
   opacity: 0.3;
   width: 100px;
 }
-body.mrs-v24 .marshall-content a,
-body.mrs-v24 .marshall-content a:hover,
-body.mrs-v24 .marshall-content a:focus,
-body.mrs-v24 .marshall-content a:active {
+body.mrs-v24 .ke-content a,
+body.mrs-v24 .ke-content a:hover,
+body.mrs-v24 .ke-content a:focus,
+body.mrs-v24 .ke-content a:active {
   color: #90C145;
 }
 
@@ -2868,7 +2855,7 @@ body.mrs-v24 .marshall-content a:active {
 /* -----------------------------------------------------------------
   *. v25
 -------------------------------------------------------------------*/
-body.mrs-v25 > .marshall-container {
+body.mrs-v25 > .ke-container {
   background-image: url("images/v25/bg.png");
   background-repeat: repeat;
   background-size: auto;
@@ -2888,13 +2875,13 @@ body.mrs-v25 > .marshall-container {
 body.mrs-v26 {
   background-color: #f1f2ed;
 }
-body.mrs-v26 > .marshall-container {
+body.mrs-v26 > .ke-container {
   background-color: #56c2df;
   background-image: url("images/v26/bg.png");
   background-repeat: repeat;
   background-size: auto;
 }
-.marshall-content-close.default_close_active {
+.ke-content-close.default_close_active {
   display: block;
 }
 
@@ -2932,7 +2919,7 @@ body.mrs-v26 > .marshall-container {
 /* -----------------------------------------------------------------
   *. v28
 -------------------------------------------------------------------*/
-canvas.mrs-canvas {
+canvas.ke-canvas {
   left: 0;
   position: absolute;
   top: 0;
@@ -3034,7 +3021,7 @@ body.mrs-v29::before {
 /* -----------------------------------------------------------------
   *. v31
 -------------------------------------------------------------------*/
-.mrs-v31 .marshall-content h1 span {
+.mrs-v31 .ke-content h1 span {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -3045,7 +3032,7 @@ body.mrs-v31 {
   -webkit-background-size: cover;
   background-size: cover;
 }
-.mrs-canvas.jquery-ripples {
+.ke-canvas.jquery-ripples {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -3064,7 +3051,7 @@ body.mrs-v32 {
   background-color: #fff;
   color: #232428;
 }
-.mrs-v32 .marshall-content h1 span {
+.mrs-v32 .ke-content h1 span {
   text-transform: uppercase;
   font-weight: bold;
   color: #5f9434;
@@ -3084,7 +3071,7 @@ body.mrs-v32 .morph-button-modal-2 .morph-content {
   background-color: #232428;
   color: #fff;
 }
-body.mrs-v32 .marshall-newsletter-description > p {
+body.mrs-v32 .ke-newsletter-description > p {
   color: #fff;
 }
 body.mrs-v32 span.close-newsletter {
@@ -3104,8 +3091,8 @@ body.mrs-fill canvas {
   top: 0;
   width: 100%;
 }
-body.mrs-fill .marshall-button-group .marshall-btn, 
-body.mrs-fill .marshall-button-group .marshall-btn-text {
+body.mrs-fill .ke-button-group .marshall-btn, 
+body.mrs-fill .ke-button-group .marshall-btn-text {
   margin: -3px 0 0 20px;
 }
 body.mrs-fill .marshall-btn {
@@ -3159,7 +3146,7 @@ body.mrs-fill .marshall-btn:active {
   width: 100%;
   z-index: 2;
 }
-body.mrs-fill .marshall-container {
+body.mrs-fill .ke-container {
   overflow-y: hidden;
 }
 
@@ -3391,7 +3378,7 @@ body.mrs-color {
 .stay_connent_with_social.marshall-top-right li a i {
   margin-right: 0;
 }
-body.mrs-color .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+body.mrs-color .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   float: none;
 }
 .mrs-color .simply-countdown-column {
@@ -3435,7 +3422,7 @@ body.mrs-color .default_mrs_newsletter.mrs_inline_newsletter .marshall-newslette
 .margin-top.default_mrs_newsletter {
   margin-top: 50px;
 }
-.mrs-v48 .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-v48 .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   width: 90%;
 }
 .mrs-v48 .mrs-color .simply-countdown-column {

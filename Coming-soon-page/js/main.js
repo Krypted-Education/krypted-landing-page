@@ -13,7 +13,7 @@
 6. SCROLL TO CONTENT
 7. CONTENT APPEAR ANIMATION INIT / #marshall-details
 8. CONTENT CLOSE INITI / #marshall-close-content
-9. NEWSLETTER FORM INIT / #marshall-form
+9. NEWSLETTER FORM INIT / #ke-form
 10. PARTICLES INIT / #mrs_particles_can
 11. SLDE SLIDER INIT - VEGAS / #mrs_bg_slider
 12. FULLSCREEN BACKGROUND SLIDER INIT - VEGAS / body.mrs-body-slider
@@ -49,6 +49,8 @@ function contentCenter($content){
     top: calc
   });
 }
+
+
 
 
 /**
@@ -91,8 +93,42 @@ if ( $('.simply-countdown-column').is_exist() ) {
       enableUtc: false
   });
 }
-
-
+/*--------------------------------------------------------------
+  timer
+  
+  
+--------------------------------------------------------------*/
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jan 20, 2018 00:00:00").getTime();
+          
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+		
+		  // Get todays date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now an the count down date
+		  var distance = countDownDate - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in an element with id="demo"
+		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		
+		  // If the count down is finished, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+        
+        
+        
 /*--------------------------------------------------------------
   4. MAGNIFIC POPUP INIT
 --------------------------------------------------------------*/
@@ -187,7 +223,7 @@ function clickToSlide($this){
 
 }
 
-$(document).on("click", ".marshall-content-view", function(e){
+$(document).on("click", ".ke-content-view", function(e){
   e.preventDefault();
   var self = $(this);
 
@@ -228,7 +264,7 @@ $(document).on("click", "#marshall-close-content-slide, .marshall-col-content.mr
 
   var self    = $(this),
     details   = $('#marshall-details'),
-    btn       = $('.marshall-content-view'),
+    btn       = $('.ke-content-view'),
     close     = $('#marshall-close-content-slide'),
     col   = $('.marshall-col-content'),
     animation = details.data('animation');
@@ -246,24 +282,24 @@ $(document).on("click", "#marshall-close-content-slide, .marshall-col-content.mr
   9. NEWSLETTER FORM INIT
 --------------------------------------------------------------*/
 
-if ( $("#marshall-form").is_exist() ) {
+if ( $("#ke-form").is_exist() ) {
 
-  var mform = $("#marshall-form");
+  var mform = $("#ke-form");
   mform.ajaxChimp({
       callback: callbackFunction,
       url: 'http://xyz.us14.list-manage.com/subscribe/post?u=3e624ea3457b50d638f1bd58b&id=bc67dbaebe'
   });
   function callbackFunction (resp) {
       if (resp.result === 'success') {
-        $('#marshall-email').val('');
+        $('#ke-email').val('');
         mform.addClass('mform-success');
-        if ( $('.marshall-newsletter-header').length > 0 ) {
-          $('.marshall-newsletter-header').removeClass('mform-header-animate').addClass('mfrom-header-animate-close');
+        if ( $('.ke-newsletter-header').length > 0 ) {
+          $('.ke-newsletter-header').removeClass('mform-header-animate').addClass('mfrom-header-animate-close');
         }
         setTimeout(function(){
           mform.removeClass('mform-success').removeClass('mform-submitting').removeClass('mform-animate');
-          if ( $('.marshall-newsletter-header').length > 0 ) {
-            $('.marshall-newsletter-header').removeClass('mfrom-header-animate-close').addClass('mfrom-header-animate');
+          if ( $('.ke-newsletter-header').length > 0 ) {
+            $('.ke-newsletter-header').removeClass('mfrom-header-animate-close').addClass('mfrom-header-animate');
           }
           mform.find('label').html('');
         }, 2000);
@@ -655,7 +691,7 @@ $(window).on("load", function(){
 /*--------------------------------------------------------------
   21. Preloader
 --------------------------------------------------------------*/
-$(".marshall-loading-screen").delay(200).fadeOut('slow');
+$(".ke-loading-screen").delay(200).fadeOut('slow');
 
 /*--------------------------------------------------------------
   22. JQUERY CENTER REINIT WHILE WINDOW LOAD

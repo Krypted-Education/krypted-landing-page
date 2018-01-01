@@ -9,12 +9,12 @@
   position: relative;
   width: 100%;
 }
-.marshall-logo {
+.ke-logo {
   margin-bottom: 40px;
   margin-top: 0;
   position: relative;
 }
-.marshall-content {
+.ke-content {
   position: relative;
   top: inherit !important;
 }
@@ -55,8 +55,8 @@
 .marshall-the_content {
   padding: 60px 50px 40px;
 }
-.marshall-logo,
-.marshall-content {
+.ke-logo,
+.ke-content {
   margin-left: 50px;
 }
 .marshall-social-column {
@@ -71,7 +71,7 @@
   transform: none !important;
   margin-left: -220px !important;
 }
-.align-center .marshall-logo {
+.align-center .ke-logo {
   margin: auto;
   position: relative;
   transform: none;
@@ -89,7 +89,7 @@ canvas {
 .marshall-col-5 .marshall-animate-content {
   width: 100%;
 }
-.marshall-col-7 .marshall-content {
+.marshall-col-7 .ke-content {
   transform: none;
   width: calc(100% - 40px);
 }
@@ -117,13 +117,13 @@ body.mrs-v7 .marshall-col-screen {
   position: relative;
   text-align: center;
 }
-.marshall-middle-6.marshall-col-content .marshall-content {
+.marshall-middle-6.marshall-col-content .ke-content {
   margin-left: 50px;
   position: absolute;
   top: calc(50% - 165.467px) !important;
   width: calc(100% - 100px);
 }
-.display_in_mobile .marshall-content {
+.display_in_mobile .ke-content {
   top: 50% !important;
 }
 .marshall-middle-6 .marshall-social-column {
@@ -142,20 +142,20 @@ body.mrs-v15 .marshall-col-6.marshall-middle-6.marshall-col-content {
   position: relative;
   min-height: auto;
 }
-body.mrs-v15 .marshall-middle-6 .marshall-logo {
+body.mrs-v15 .marshall-middle-6 .ke-logo {
   left: inherit;
   margin: auto;
   position: relative;
   transform: none;
 }
-body.mrs-v15 .marshall-middle-6.marshall-col-content .marshall-content {
+body.mrs-v15 .marshall-middle-6.marshall-col-content .ke-content {
   margin: auto;
   position: relative;
   top: inherit;
   transform: none;
   width: 96%;
 }
-body.mrs-v15 .marshall-container {
+body.mrs-v15 .ke-container {
   min-height: 600px;
   position: relative;
 }
@@ -167,12 +167,12 @@ body.mrs-v15 .marshall-container {
   transform: scale(0.6);
   width: 100%;
 }
-.marshall-container {
+.ke-container {
   position: relative;
   width: 100%;
 }
 
-.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.mrs-white .default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   margin-bottom: 15px;
 }
 .bg-container {
@@ -204,7 +204,7 @@ body {
     font-size: 14px;
 }
 
-.default_mrs_newsletter.mrs_inline_newsletter .marshall-newsletter-content {
+.default_mrs_newsletter.mrs_inline_newsletter .ke-newsletter-content {
   margin-bottom: 20px;
   width: 100%;
 }
@@ -212,14 +212,14 @@ body {
   max-width: 90%;
 }
 
-.marshall-middle-6.marshall-col-content .marshall-content,
-.marshall-middle-6.marshall-col-content .marshall-content.jquery-center {
+.marshall-middle-6.marshall-col-content .ke-content,
+.marshall-middle-6.marshall-col-content .ke-content.jquery-center {
   margin-left: 20px;
   position: relative;
   top: inherit !important;
   width: calc(100% - 40px);
 }
-.marshall-middle-6 .marshall-logo {
+.marshall-middle-6 .ke-logo {
   left: inherit;
   margin-left: 0;
   position: relative;
@@ -243,7 +243,7 @@ body {
 .mrs-v24 .marshall-col-10.marshall-middle-10.marshall-col-content  {
   margin-left: 0;
 }
-.marshall-logo.marshall-top-left {
+.ke-logo.marshall-top-left {
   left: inherit;
   position: relative;
   text-align: center;
@@ -279,20 +279,20 @@ body {
   margin-left: -150px !important;
   width: 300px;
 }
-.marshall-newsletter-inner {
+.ke-newsletter-inner {
   padding: 0 20px;
 }
-.marshall-newsletter-inner .marshall-newsletter-content {
+.ke-newsletter-inner .ke-newsletter-content {
   margin: 35px auto auto;
   width: 100%;
 }
 h1, .h1 {
     font-size: 2em;
 }
-.marshall-logo {
+.ke-logo {
   margin-left: 20px;
 } 
-.marshall-content {
+.ke-content {
     margin-left: 20px;
     width: calc(100% - 40px);
 }
