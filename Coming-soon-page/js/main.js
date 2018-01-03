@@ -298,15 +298,19 @@
 
       $('.ke_submit').click(function() {
         var subscriber = firebase.database().ref("subscribers/");
-        var email = $('#ke-email').val();
+        var $email = $('#ke-email');
+        var email = $email.val();
+        $('.alert').text('');
         var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         if (!re.test(email)) {
-          return $('#metamask-alert').text('Email adresi gecersiz.').show();
+          return $('.alert').text('Please enter a valid email.');
         }
-        subscriber.set({
+        subscriber.push({
           "email": email
         });
-        $('#ke-email').val('');
+        $email.hide();
+        $(this).hide();
+        $('.success-msg').text('You have successfully subscribed!');
         mform.addClass('mform-success');
         if ($('.ke-newsletter-header').length > 0) {
           $('.ke-newsletter-header').removeClass('mform-header-animate').addClass('mfrom-header-animate-close');
