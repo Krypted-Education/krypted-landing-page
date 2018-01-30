@@ -9,7 +9,8 @@ if (!process.env.DEBUG) {
     cache: true
   }));
 }
-app.use("/", express.static("Coming-soon-page"));
+// app.use("/", express.static("Coming-soon-page"));
+app.use("/", express.static("landing-page"));
 // app.use("/vendor", express.static("bower_components"));
 
 app.listen(app.get('port'), function() {
