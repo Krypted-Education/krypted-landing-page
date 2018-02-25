@@ -15,6 +15,10 @@
 
 /* --------------------------------- */
 
+#video{
+  margin-left: 250px;
+}
+
 #signup {
   background-color: #f4f4f4;
 }

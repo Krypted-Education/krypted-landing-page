@@ -45,6 +45,11 @@
     width: auto;
     height: 600px;
 }
+    #video{
+        width: auto;
+        margin-left: 20px;
+        height: 240px;
+    }
 }
 
 
