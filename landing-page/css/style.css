@@ -58,6 +58,7 @@
 #roadmap {
   width: auto;
   height: 1080px;
+    box-sizing:content-box;
 }
 
 #teamson {
@@ -88,7 +89,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
 
 html {
