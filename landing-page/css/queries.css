@@ -51,7 +51,36 @@
         margin-left: 20px;
         height: 240px;
     }
+    
+    .pop-up {
+    display: none;
+        
+    
 }
+
+.boxs {
+    
+    display: none;
+}
+    .popupresim{
+        
+        display: none;
+        
+    }
+    #clon{
+        display:inline;
+    }
+
+
+
+
+
+    
+}
+    
+    
+    
+
 
 
 
