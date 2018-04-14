@@ -73,7 +73,12 @@
 
 
 
-
+    .icoya{
+        border: none;
+        text-overflow:inherit;
+        
+        
+    }
 
     
 }
