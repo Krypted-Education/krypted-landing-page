@@ -1,6 +1,9 @@
 // KryptEd StyleSheet
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=latin-ext')
 
+$color-main: #632a61
+$color-secondary: #ffd35e
+ 
 body
     font-family: 'Montserrat', sans-serif
 
@@ -12,13 +15,14 @@ body
     z-index: 2
     .navbar-nav
         a
-            color: #632a61 !important
+            color: $color-main !important
             font-weight: 500
             font-size: 14px
     
 .navbar-brand
     img
         max-width: 100px
+
 .navbar-toggler
     border: none
 
@@ -27,18 +31,44 @@ body
     height: 100vh
     background-image: url('../img/background-image.jpg')
     background-size: contain
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fca80c', endColorstr='#fca80c',GradientType=1)
-    &:after
-        width: 100%
-        height: 100%
+
+.hero-section
+    padding-top: 25vh
+    h1
+        color: $color-main
+        font-weight: 600
+        font-size: 80px
+        text-align: center
+    .link-group
         display: block
-        z-index: 1
-        content: ' '
-        opacity: 0.4
+        text-align: center
+        padding-top: 20px
+        .link
+            border: 2px solid $color-main
+            border-radius: 30px
+            padding: 10px 20px
+            color: $color-main
+            text-decoration: none
+            margin-right: 10px
+            &:hover
+                background-color: $color-main
+                color: #fff
+            &:last-child
+                margin-right: 0
+    .partners
+        display: block
+        text-align: center
+        padding-top: 100px
+        h5
+            color: $color-main
+    .explore
+        text-align: center
+        text-decoration: none
+        display: block
         position: absolute
-        top: 0
+        width: 100%
         left: 0
-        background: #fca80c
-        background: -moz-linear-gradient(left, #fca80c 0%, #ffd25b 50%, #fca80c 100%)
-        background: -webkit-linear-gradient(left, #fca80c 0%,#ffd25b 50%,#fca80c 100%)
-        background: linear-gradient(to right, #fca80c 0%,#ffd25b 50%,#fca80c 100%)
+        bottom: 10px
+        font-weight: 500
+        color: $color-main
+        font-size: 14px
