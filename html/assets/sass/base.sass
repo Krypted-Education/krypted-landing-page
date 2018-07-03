@@ -3,3 +3,24 @@
 
 body
     font-family: 'Montserrat', sans-serif
+
+#home
+    width: 100%
+    height: 100vh
+    background-image: url('../img/bg-pattern.png')
+    background-repeat: repeat
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fca80c', endColorstr='#fca80c',GradientType=1)
+    &:after
+        width: 100%
+        height: 100%
+        display: block
+        z-index: 1
+        content: ' '
+        opacity: 0.4
+        position: absolute
+        top: 0
+        left: 0
+        background: #fca80c
+        background: -moz-linear-gradient(left, #fca80c 0%, #ffd25b 50%, #fca80c 100%)
+        background: -webkit-linear-gradient(left, #fca80c 0%,#ffd25b 50%,#fca80c 100%)
+        background: linear-gradient(to right, #fca80c 0%,#ffd25b 50%,#fca80c 100%)
