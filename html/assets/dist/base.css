@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=latin-ext");
 body { font-family: "Montserrat", sans-serif; }
 
 #navigation { top: 0; width: 100%; }
@@ -21,5 +21,14 @@ body { font-family: "Montserrat", sans-serif; }
 .hero-section .partners { display: block; text-align: center; padding-top: 100px; }
 .hero-section .partners h5 { color: #632a61; }
 .hero-section .explore { text-align: center; text-decoration: none; display: block; position: absolute; width: 100%; left: 0; bottom: 10px; font-weight: 500; color: #632a61; font-size: 14px; }
+
+#whatWeDo { background-color: #373277; min-height: 100vh; }
+#whatWeDo h3 { color: #ffd35e; text-align: center; padding: 12vh 0 60px; }
+#whatWeDo .list .item { display: flex; text-align: center; }
+#whatWeDo .list .item .box { width: 100%; padding: 20px 25px; background: rgba(39, 36, 85, 0.8); }
+#whatWeDo .list .item .box .icon { width: 100%; padding: 15px; position: absolute; top: -40px; left: 0; }
+#whatWeDo .list .item .box .icon img { max-width: 25%; }
+#whatWeDo .list .item .box .heading { color: #ffd35e; font-size: 18px; padding: 40px 0px 10px 0; }
+#whatWeDo .list .item .box .text p { color: #fff; font-weight: 300; font-size: 15px; }
 
 /*# sourceMappingURL=base.css.map */
