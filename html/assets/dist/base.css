@@ -31,4 +31,12 @@ body { font-family: "Montserrat", sans-serif; }
 #whatWeDo .list .item .box .heading { color: #ffd35e; font-size: 18px; padding: 40px 0px 10px 0; }
 #whatWeDo .list .item .box .text p { color: #fff; font-weight: 300; font-size: 15px; }
 
+#kryptedTeam { background-color: #60295e; min-height: 100vh; }
+#kryptedTeam h3 { color: #ffd35e; text-align: center; padding: 12vh 0 60px; }
+#kryptedTeam .team.list .member { padding-bottom: 20px; }
+#kryptedTeam .team.list .member img { border: 2px solid #ffd35e; }
+#kryptedTeam .team.list .member .name { color: #fff; font-size: 15px; padding-top: 10px; }
+#kryptedTeam .team.list .member .position { color: #ffd9fe; font-size: 13px; }
+#kryptedTeam .team.list .member .social-links { color: #ffd35e; }
+
 /*# sourceMappingURL=base.css.map */
