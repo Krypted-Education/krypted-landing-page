@@ -34,9 +34,12 @@ body { font-family: "Montserrat", sans-serif; }
 #kryptedTeam { background-color: #60295e; min-height: 100vh; }
 #kryptedTeam h3 { color: #ffd35e; text-align: center; padding: 12vh 0 60px; }
 #kryptedTeam .team.list .member { padding-bottom: 20px; }
-#kryptedTeam .team.list .member img { border: 2px solid #ffd35e; }
+#kryptedTeam .team.list .member img { width: 100%; border: 2px solid #ffd35e; }
 #kryptedTeam .team.list .member .name { color: #fff; font-size: 15px; padding-top: 10px; }
 #kryptedTeam .team.list .member .position { color: #ffd9fe; font-size: 13px; }
-#kryptedTeam .team.list .member .social-links { color: #ffd35e; }
+#kryptedTeam .team.list .member .social-links { padding-top: 15px; }
+#kryptedTeam .team.list .member .social-links a { font-size: 15px; color: #ffd35e; padding: 2px; }
+#kryptedTeam .team.list .member .social-links a:first-child { margin-right: 3px; }
+#kryptedTeam .team.list .member .social-links a:hover { color: #fff; }
 
 /*# sourceMappingURL=base.css.map */
