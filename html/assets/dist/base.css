@@ -42,4 +42,10 @@ body { font-family: "Montserrat", sans-serif; }
 #kryptedTeam .team.list .member .social-links a:first-child { margin-right: 3px; }
 #kryptedTeam .team.list .member .social-links a:hover { color: #fff; }
 
+#roadMap { background-color: #492a63; min-height: 100vh; }
+#roadMap .container .row .col { text-align: center; }
+#roadMap .container .row .col .image { max-height: 70px; margin-bottom: 20px; }
+#roadMap .container .row .col h3 { color: #fff; text-align: center; padding: 22vh 0 70px; }
+#roadMap .container .row .col p { font-size: 15px; font-weight: 300; color: #fff; }
+
 /*# sourceMappingURL=base.css.map */
