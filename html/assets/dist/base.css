@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=latin-ext");
 body { font-family: "Montserrat", sans-serif; }
 
@@ -47,5 +48,16 @@ body { font-family: "Montserrat", sans-serif; }
 #roadMap .container .row .col .image { max-height: 70px; margin-bottom: 20px; }
 #roadMap .container .row .col h3 { color: #fff; text-align: center; padding: 22vh 0 70px; }
 #roadMap .container .row .col p { font-size: 15px; font-weight: 300; color: #fff; }
+
+#faq { background-color: #2a3b63; min-height: 100vh; padding-bottom: 10vh; background-image: url("../img/social-responsibility.png"); background-repeat: no-repeat; background-size: 50% auto; background-position: center left 10%; }
+#faq h3 { color: #fff; text-align: left; padding: 22vh 0 70px; }
+#faq p { font-size: 15px; font-weight: 300; color: #fff; }
+#faq .accordion .card { background: none; border: none; }
+#faq .accordion .card .card-header { padding: 0; }
+#faq .accordion .card .card-header .btn-link { width: 100%; text-align: left; color: #000; border-radius: 0; font-weight: 500; font-size: 15px; text-decoration: none; background: #ffd35e; }
+#faq .accordion .card .card-header .btn-link:after { font-family: "Font Awesome 5 Free"; font-weight: 900; content: ""; float: right; }
+#faq .accordion .card .card-header .btn-link.collapsed { background: #e9d03e; }
+#faq .accordion .card .card-header .btn-link.collapsed:after { content: ""; }
+#faq .accordion .card .card-body { background: none; color: #fff; font-size: 14px; font-weight: 300; }
 
 /*# sourceMappingURL=base.css.map */
