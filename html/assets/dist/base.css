@@ -60,4 +60,13 @@ body { font-family: "Montserrat", sans-serif; }
 #faq .accordion .card .card-header .btn-link.collapsed:after { content: ""; }
 #faq .accordion .card .card-body { background: none; color: #fff; font-size: 14px; font-weight: 300; }
 
+#preICO { background-color: #2a5163; min-height: 100vh; padding-bottom: 10vh; background-image: url("../img/ico.png"); background-repeat: no-repeat; background-size: 50% auto; background-position: center right 10%; }
+#preICO h3 { padding: 2vh 0 20px; color: #fff; text-align: left; }
+#preICO h3:first-child { padding: 12vh 0 30px; }
+#preICO p { font-size: 15px; font-weight: 300; color: #fff; }
+#preICO p a { color: #ffd35e; text-decoration: none; }
+#preICO p a:hover, #preICO p a:active, #preICO p a:focus { color: #fff; }
+#preICO .media-links .row .link { border: 2px solid #ffd35e; width: 100%; margin: 10px; margin-left: 0; }
+#preICO .media-links .row .link img { text-align: center; width: 100%; }
+
 /*# sourceMappingURL=base.css.map */
