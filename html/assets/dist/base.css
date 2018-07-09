@@ -69,4 +69,10 @@ body { font-family: "Montserrat", sans-serif; }
 #preICO .media-links .row .link { border: 2px solid #ffd35e; width: 100%; margin: 10px; margin-left: 0; }
 #preICO .media-links .row .link img { text-align: center; width: 100%; }
 
+footer { background: #ffd35e; }
+footer p { color: #632a61; font-size: 14px; }
+footer ul.social-links li { display: inline; }
+footer ul.social-links li a { padding: 2px; text-decoration: none; color: #632a61; }
+footer ul.social-links li a:hover, footer ul.social-links li a:active, footer ul.social-links li a:focus { color: #000; }
+
 /*# sourceMappingURL=base.css.map */
