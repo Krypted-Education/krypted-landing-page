@@ -10,7 +10,7 @@ if (!process.env.DEBUG) {
   }));
 }
 // app.use("/", express.static("Coming-soon-page"));
-app.use("/", express.static("landing-page"));
+app.use("/", express.static("html"));
 // app.use("/vendor", express.static("bower_components"));
 
 app.listen(app.get('port'), function() {

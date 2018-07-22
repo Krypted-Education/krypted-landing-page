@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=latin-ext");
+body { font-family: "Montserrat", sans-serif; }
+
+#navigation { top: 0; width: 100%; }
+
+#mainNav { z-index: 2; }
+#mainNav .navbar-nav a { color: #632a61 !important; font-weight: 500; font-size: 14px; }
+
+.navbar-brand img { max-width: 100px; }
+
+.navbar-toggler { border: none; }
+
+#home { width: 100%; height: 100vh; background-image: url("../img/background-image.jpg"); background-size: contain; }
+
+.hero-section { padding-top: 25vh; }
+.hero-section h1 { color: #632a61; font-weight: 600; font-size: 80px; text-align: center; }
+.hero-section .link-group { display: block; text-align: center; padding-top: 20px; }
+.hero-section .link-group .link { border: 2px solid #632a61; border-radius: 30px; padding: 10px 20px; color: #632a61; text-decoration: none; margin-right: 10px; }
+.hero-section .link-group .link:hover { background-color: #632a61; color: #fff; }
+.hero-section .link-group .link:last-child { margin-right: 0; }
+.hero-section .partners { display: block; text-align: center; padding-top: 100px; }
+.hero-section .partners h5 { color: #632a61; }
+.hero-section .explore { text-align: center; text-decoration: none; display: block; position: absolute; width: 100%; left: 0; bottom: 10px; font-weight: 500; color: #632a61; font-size: 14px; }
+
+#whatWeDo { background-color: #373277; min-height: 100vh; }
+#whatWeDo h3 { color: #ffd35e; text-align: center; padding: 12vh 0 60px; }
+#whatWeDo .list .item { display: flex; text-align: center; }
+#whatWeDo .list .item .box { width: 100%; padding: 20px 25px; background: rgba(39, 36, 85, 0.8); }
+#whatWeDo .list .item .box .icon { width: 100%; padding: 15px; position: absolute; top: -40px; left: 0; }
+#whatWeDo .list .item .box .icon img { max-width: 25%; }
+#whatWeDo .list .item .box .heading { color: #ffd35e; font-size: 18px; padding: 40px 0px 10px 0; }
+#whatWeDo .list .item .box .text p { color: #fff; font-weight: 300; font-size: 15px; }
+
+#kryptedTeam { background-color: #60295e; min-height: 100vh; }
+#kryptedTeam h3 { color: #ffd35e; text-align: center; padding: 12vh 0 60px; }
+#kryptedTeam .team.list .member { padding-bottom: 20px; }
+#kryptedTeam .team.list .member img { width: 100%; border: 2px solid #ffd35e; }
+#kryptedTeam .team.list .member .name { color: #fff; font-size: 15px; padding-top: 10px; }
+#kryptedTeam .team.list .member .position { color: #ffd9fe; font-size: 13px; }
+#kryptedTeam .team.list .member .social-links { padding-top: 15px; }
+#kryptedTeam .team.list .member .social-links a { font-size: 15px; color: #ffd35e; padding: 2px; }
+#kryptedTeam .team.list .member .social-links a:first-child { margin-right: 3px; }
+#kryptedTeam .team.list .member .social-links a:hover { color: #fff; }
+
+#roadMap { background-color: #492a63; min-height: 100vh; }
+#roadMap .container .row .col { text-align: center; }
+#roadMap .container .row .col .image { max-height: 70px; margin-bottom: 20px; }
+#roadMap .container .row .col h3 { color: #fff; text-align: center; padding: 22vh 0 70px; }
+#roadMap .container .row .col p { font-size: 15px; font-weight: 300; color: #fff; }
+
+#faq { background-color: #2a3b63; min-height: 100vh; padding-bottom: 10vh; background-image: url("../img/social-responsibility.png"); background-repeat: no-repeat; background-size: 50% auto; background-position: center left 10%; }
+#faq h3 { color: #fff; text-align: left; padding: 22vh 0 70px; }
+#faq p { font-size: 15px; font-weight: 300; color: #fff; }
+#faq .accordion .card { background: none; border: none; }
+#faq .accordion .card .card-header { padding: 0; }
+#faq .accordion .card .card-header .btn-link { width: 100%; text-align: left; color: #000; border-radius: 0; font-weight: 500; font-size: 15px; text-decoration: none; background: #ffd35e; }
+#faq .accordion .card .card-header .btn-link:after { font-family: "Font Awesome 5 Free"; font-weight: 900; content: ""; float: right; }
+#faq .accordion .card .card-header .btn-link.collapsed { background: #e9d03e; }
+#faq .accordion .card .card-header .btn-link.collapsed:after { content: ""; }
+#faq .accordion .card .card-body { background: none; color: #fff; font-size: 14px; font-weight: 300; }
+
+#preICO { background-color: #2a5163; min-height: 100vh; padding-bottom: 10vh; background-image: url("../img/ico.png"); background-repeat: no-repeat; background-size: 50% auto; background-position: center right 10%; }
+#preICO h3 { padding: 2vh 0 20px; color: #fff; text-align: left; }
+#preICO h3:first-child { padding: 12vh 0 30px; }
+#preICO p { font-size: 15px; font-weight: 300; color: #fff; }
+#preICO p a { color: #ffd35e; text-decoration: none; }
+#preICO p a:hover, #preICO p a:active, #preICO p a:focus { color: #fff; }
+#preICO .media-links .row .link { border: 2px solid #ffd35e; width: 100%; margin: 10px; margin-left: 0; }
+#preICO .media-links .row .link img { text-align: center; width: 100%; }
+
+footer { background: #ffd35e; }
+footer p { color: #632a61; font-size: 14px; }
+footer ul.social-links li { display: inline; }
+footer ul.social-links li a { padding: 2px; text-decoration: none; color: #632a61; }
+footer ul.social-links li a:hover, footer ul.social-links li a:active, footer ul.social-links li a:focus { color: #000; }
+
+/*# sourceMappingURL=base.css.map */
