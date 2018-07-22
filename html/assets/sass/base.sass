@@ -1,0 +1,255 @@
+// KryptEd StyleSheet
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=latin-ext')
+
+$color-main: #632a61
+$color-secondary: #ffd35e
+ 
+body
+    font-family: 'Montserrat', sans-serif
+
+#navigation
+    top: 0
+    width: 100%
+
+#mainNav
+    z-index: 2
+    .navbar-nav
+        a
+            color: $color-main !important
+            font-weight: 500
+            font-size: 14px
+    
+.navbar-brand
+    img
+        max-width: 100px
+
+.navbar-toggler
+    border: none
+
+#home
+    width: 100%
+    height: 100vh
+    background-image: url('../img/background-image.jpg')
+    background-size: contain
+
+.hero-section
+    padding-top: 25vh
+    h1
+        color: $color-main
+        font-weight: 600
+        font-size: 80px
+        text-align: center
+    .link-group
+        display: block
+        text-align: center
+        padding-top: 20px
+        .link
+            border: 2px solid $color-main
+            border-radius: 30px
+            padding: 10px 20px
+            color: $color-main
+            text-decoration: none
+            margin-right: 10px
+            &:hover
+                background-color: $color-main
+                color: #fff
+            &:last-child
+                margin-right: 0
+    .partners
+        display: block
+        text-align: center
+        padding-top: 100px
+        h5
+            color: $color-main
+    .explore
+        text-align: center
+        text-decoration: none
+        display: block
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: 10px
+        font-weight: 500
+        color: $color-main
+        font-size: 14px
+
+#whatWeDo
+    background-color: #373277
+    min-height: 100vh
+    h3
+        color: $color-secondary
+        text-align: center
+        padding: 12vh 0 60px
+    .list
+        .item
+            display: flex
+            text-align: center
+            .box
+                width: 100%
+                padding: 20px 25px
+                background: rgba(39, 36, 85, 0.80)
+                .icon
+                    width: 100%
+                    padding: 15px
+                    position: absolute
+                    top: -40px
+                    left: 0
+                    img
+                        max-width: 25%
+                .heading
+                    color: $color-secondary
+                    font-size: 18px
+                    padding: 40px 0px 10px 0
+                .text
+                    p
+                        color: #fff
+                        font-weight: 300
+                        font-size: 15px
+
+#kryptedTeam
+    background-color: #60295e
+    min-height: 100vh
+    h3
+        color: $color-secondary
+        text-align: center
+        padding: 12vh 0 60px
+    .team.list
+        .member
+            padding-bottom: 20px
+            img
+                width: 100%
+                border: 2px solid $color-secondary
+            .name
+                color: #fff
+                font-size: 15px
+                padding-top: 10px
+            .position
+                color: #ffd9fe
+                font-size: 13px
+            .social-links
+                padding-top: 15px
+                a
+                    font-size: 15px
+                    color: $color-secondary
+                    padding: 2px
+                    &:first-child
+                        margin-right: 3px
+                    &:hover
+                        color: #fff
+#roadMap
+    background-color: #492a63
+    min-height: 100vh
+    .container
+        .row
+            .col
+                text-align: center
+                .image
+                    max-height: 70px
+                    margin-bottom: 20px
+                h3
+                    color: #fff
+                    text-align: center
+                    padding: 22vh 0 70px
+                p
+                    font-size: 15px
+                    font-weight: 300
+                    color: #fff
+                    
+#faq
+    background-color: #2a3b63
+    min-height: 100vh
+    padding-bottom: 10vh
+    background-image: url('../img/social-responsibility.png')
+    background-repeat: no-repeat
+    background-size: 50% auto
+    background-position: center left 10%  
+    h3
+        color: #fff
+        text-align: left
+        padding: 22vh 0 70px
+    p
+        font-size: 15px
+        font-weight: 300
+        color: #fff
+
+    .accordion
+        .card
+            background: none
+            border: none
+            .card-header
+                padding: 0
+                .btn-link
+                    width: 100%
+                    text-align: left
+                    color: #000
+                    border-radius: 0
+                    font-weight: 500
+                    font-size: 15px
+                    text-decoration: none
+                    background: $color-secondary
+                    &:after
+                        font-family: "Font Awesome 5 Free"
+                        font-weight: 900
+                        content: '\f077'
+                        float: right
+                .btn-link.collapsed
+                    background: #e9d03e
+                    &:after
+                        content: "\f078"
+            .card-body
+                background: none
+                color: #fff
+                font-size: 14px
+                font-weight: 300
+
+#preICO
+    background-color: #2a5163
+    min-height: 100vh
+    padding-bottom: 10vh
+    background-image: url('../img/ico.png')
+    background-repeat: no-repeat
+    background-size: 50% auto
+    background-position: center right 10%  
+    h3
+        padding: 2vh 0 20px
+        color: #fff
+        text-align: left
+        &:first-child
+            padding: 12vh 0 30px
+    p
+        font-size: 15px
+        font-weight: 300
+        color: #fff
+        a
+            color: $color-secondary
+            text-decoration: none
+            &:hover,
+            &:active,
+            &:focus
+                color: #fff
+    .media-links
+        .row
+            .link
+                border: 2px solid $color-secondary
+                width: 100%
+                margin: 10px
+                margin-left: 0
+                img
+                    text-align: center
+                    width: 100%
+footer
+    background: $color-secondary
+    p
+        color: $color-main
+        font-size: 14px
+    ul.social-links
+        li
+            display: inline
+            a
+                padding: 2px
+                text-decoration: none
+                color: $color-main
+                &:hover,
+                &:active,
+                &:focus
+                    color: #000
