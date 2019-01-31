@@ -130,12 +130,23 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
 }
 
 @media all and (max-width: 768px) and (min-width: 10px){
+    
+    .iframe{
+        width: 200px;
+        height: 400px;
+    }
+    
     .YouTubePopUp-Content{
         max-width:90%;
     }
 }
 
 @media all and (max-width: 600px) and (min-width: 10px){
+    .iframe{
+        width: 200px;
+        height: 400px;
+    }
+    
     .YouTubePopUp-Content iframe{
         height:320px !important;
     }
