@@ -173,7 +173,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 350px;
 }
 
 div.gallery:hover {
@@ -188,4 +188,5 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+    color: #fff;
 }
